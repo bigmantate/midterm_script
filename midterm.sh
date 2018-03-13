@@ -82,6 +82,7 @@ hexdump ./64MB.img | less
 
 echo "We will make a file system onto our image"
 
+
 sudo mkfs -t ext4 ./64MB.img
 
 echo "Making a mount point a home for it and mounting"
@@ -115,6 +116,7 @@ echo "Making a listing to look at inode ID's for link made"
 
 ls -iR dir*
 sleep 5s
+
 echo "We will take a closer look at our system now"
 
 sudo dmesg | less
